@@ -1,0 +1,50 @@
+{
+  "name": "@bantam/cli",
+  "version": "0.1.0",
+  "description": "Command-line interface for Bantam - deploy and manage your static sites",
+  "bin": {
+    "bantam": "./dist/index.js"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "bantam",
+    "cli",
+    "static-site",
+    "hosting",
+    "deployment"
+  ],
+  "author": "Bantam Team",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^6.0.1",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "conf": "^12.0.0",
+    "dotenv": "^16.4.1",
+    "form-data": "^4.0.0",
+    "inquirer": "^9.2.15",
+    "node-fetch": "^3.3.2",
+    "ora": "^8.0.1",
+    "progress": "^2.0.3",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/archiver": "^6.0.2",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.16",
+    "@types/progress": "^2.0.7",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
