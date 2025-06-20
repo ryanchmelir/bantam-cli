@@ -3,7 +3,7 @@
 Deploy static sites instantly from your terminal.
 
 [![npm version](https://img.shields.io/npm/v/@bantam/cli.svg)](https://www.npmjs.com/package/@bantam/cli)
-[![License](https://img.shields.io/npm/l/@bantam/cli.svg)](https://github.com/bantam/cli/blob/main/LICENSE)
+[![License](https://img.shields.io/npm/l/@bantam/cli.svg)](https://github.com/ryanchmelir/bantam-cli/blob/main/LICENSE)
 
 ## What is Bantam?
 
@@ -173,7 +173,7 @@ See [bantam.host/pricing](https://bantam.host/pricing) for details.
 ## Support
 
 - Documentation: [bantam.host/docs](https://bantam.host/docs)
-- Issues: [GitHub Issues](https://github.com/bantam/cli/issues)
+- Issues: [GitHub Issues](https://github.com/ryanchmelir/bantam-cli/issues)
 - Email: support@bantam.host
 
 ## License

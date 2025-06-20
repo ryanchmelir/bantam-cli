@@ -1,0 +1,39 @@
+# Source files
+src/
+*.ts
+
+# Configuration files
+tsconfig.json
+.gitignore
+.env
+.env.*
+
+# Development files
+*.log
+*.tmp
+.DS_Store
+node_modules/
+
+# Testing
+coverage/
+*.test.js
+*.spec.js
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build tools
+tsup.config.*
+
+# Documentation source
+docs/
+
+# Examples
+examples/
+
+# Git
+.git/
+.github/

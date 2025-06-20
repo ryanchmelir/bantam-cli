@@ -22,6 +22,14 @@
   ],
   "author": "Bantam Team",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanchmelir/bantam-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanchmelir/bantam-cli/issues"
+  },
+  "homepage": "https://github.com/ryanchmelir/bantam-cli#readme",
   "dependencies": {
     "archiver": "^6.0.1",
     "chalk": "^5.3.0",
