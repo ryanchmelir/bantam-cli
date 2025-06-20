@@ -163,7 +163,7 @@ Create a personal access token:
 - **Free tier**: 1 Permanent URL (must log in to [bantam.host](https://bantam.host) every 90 days) plus 2 temporary URLs up to 3 days expiry.
 - **Paid plans**: Permanent hosting, custom domains, analytics
 
-See [bantam.host/pricing](https://bantam.host/pricing) for details.
+See [bantam.host/#pricing](https://bantam.host/#pricing) for details.
 
 ## Requirements
 
