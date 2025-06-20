@@ -2,8 +2,8 @@
 
 Deploy static sites instantly from your terminal.
 
-[![npm version](https://img.shields.io/npm/v/@bantam/cli.svg)](https://www.npmjs.com/package/@bantam/cli)
-[![License](https://img.shields.io/npm/l/@bantam/cli.svg)](https://github.com/ryanchmelir/bantam-cli/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/@bantamhq/cli.svg)](https://www.npmjs.com/package/@bantamhq/cli)
+[![License](https://img.shields.io/npm/l/@bantamhq/cli.svg)](https://github.com/ryanchmelir/bantam-cli/blob/main/LICENSE)
 
 ## What is Bantam?
 
@@ -12,12 +12,12 @@ Deploy static sites instantly from your terminal.
 ## Installation
 
 ```bash
-npm install -g @bantam/cli
+npm install -g @bantamhq/cli
 ```
 
 Or use without installing:
 ```bash
-npx @bantam/cli deploy
+npx @bantamhq/cli deploy
 ```
 
 ## Quick Start
