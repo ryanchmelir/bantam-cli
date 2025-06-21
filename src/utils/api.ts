@@ -13,6 +13,8 @@ const packageJson = JSON.parse(
   readFileSync(join(__dirname, '..', 'package.json'), 'utf-8')
 );
 
+const SYSTEM_DOMAIN_ID = '00000000-0000-0000-0000-000000000001';
+
 class ApiClient {
   private getHeaders(): Record<string, string> {
     const config = getConfig();
@@ -225,10 +227,10 @@ class ApiClient {
 
   async checkSubdomainAvailability(subdomain: string, domainId?: string): Promise<ApiResponse<{ available: boolean; subdomain: string; domain_id: string }>> {
     const config = getConfig();
-    const params = new URLSearchParams({ subdomain });
-    if (domainId) {
-      params.append('domain_id', domainId);
-    }
+    const params = new URLSearchParams({ 
+      subdomain,
+      domain_id: domainId || SYSTEM_DOMAIN_ID
+    });
 
     const response = await fetch(`${config.apiUrl}/slugs/check?${params}`, {
       method: 'GET',
@@ -240,10 +242,9 @@ class ApiClient {
 
   async generateSubdomain(domainId?: string): Promise<ApiResponse<{ slug: string }>> {
     const config = getConfig();
-    const params = new URLSearchParams();
-    if (domainId) {
-      params.append('domain_id', domainId);
-    }
+    const params = new URLSearchParams({
+      domain_id: domainId || SYSTEM_DOMAIN_ID
+    });
 
     const response = await fetch(`${config.apiUrl}/slugs/generate?${params}`, {
       method: 'GET',
